@@ -1,0 +1,78 @@
+{
+  "entities": {
+    "archive": {
+      "title": "Archive Item",
+      "description": "Metadata for files, documents, and events in the archive.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string", "enum": ["Dokumen", "Kegiatan", "Prestasi", "Event"] },
+        "date": { "type": "string" },
+        "filesize": { "type": "string" },
+        "type": { "type": "string" },
+        "fileUrl": { "type": "string", "format": "uri" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "uploaderId": { "type": "string" }
+      },
+      "required": ["title", "category", "date", "fileUrl"]
+    },
+    "staff": {
+      "title": "Staff Member",
+      "description": "Information about school leaders and teachers.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "nip": { "type": "string" },
+        "ttl": { "type": "string" },
+        "edu": { "type": "string" },
+        "gol": { "type": "string" },
+        "img": { "type": "string", "format": "uri" },
+        "order": { "type": "number" }
+      },
+      "required": ["name", "role"]
+    },
+    "downloadLog": {
+      "title": "Download Log",
+      "description": "Logs of when users download archive files.",
+      "type": "object",
+      "properties": {
+        "archiveId": { "type": "string" },
+        "archiveTitle": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userName": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["archiveId", "archiveTitle", "timestamp"]
+    },
+    "category": {
+      "title": "Archive Category",
+      "description": "Categories for organizing archive items.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name"]
+    }
+  },
+  "firestore": {
+    "/archives/{archiveId}": {
+      "schema": "archive",
+      "description": "Collection of school archive records."
+    },
+    "/staff/{staffId}": {
+      "schema": "staff",
+      "description": "Collection of school staff and teachers."
+    },
+    "/downloadLogs/{logId}": {
+      "schema": "downloadLog",
+      "description": "Audit trail of file downloads."
+    },
+    "/categories/{categoryId}": {
+      "schema": "category",
+      "description": "Customizable archive categories."
+    }
+  }
+}
