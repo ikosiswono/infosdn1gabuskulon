@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="GHBanner" src="[https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6](https://github.com/ikosiswono/infosdn1gabuskulon/blob/main/assets/gambar/logo/1776999319316.png?raw=true)" />
 </div>
 
 # UPTD SDN 1 GABUS KULON - DIGITAL 2026
