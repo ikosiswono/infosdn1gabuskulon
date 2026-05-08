@@ -108,31 +108,31 @@ const Kontak = () => {
           </motion.div>
         </div>
 
-         {/* Google Maps Placeholder */}
-        <a 
-          href="https://maps.app.goo.gl/vL7Z37PZQzQzQzQz7" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          aria-label={t('contact.mapTitle')}
-          className="mt-32 h-[500px] bg-gray-100 rounded-[3rem] overflow-hidden shadow-inner relative group block"
-        >
-           <img 
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" 
-              alt={t('contact.mapTitle')} 
-              className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 transition-all duration-700" 
+        {/* Google Maps Embed */}
+        <div className="mt-32 h-[500px] bg-gray-100 rounded-[3rem] overflow-hidden shadow-inner relative group">
+           <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.8291284436878!2d108.05027462523228!3d-6.412372790170057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6eb57d050f09a5%3A0x7ab790ca2f1a4446!2sUPTD%20SDN%201%20GABUSKULON!5e1!3m2!1sid!2sid!4v1778202918628!5m2!1sid!2sid" 
+              className="w-full h-full border-0 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+              allowFullScreen={true}
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title={t('contact.mapTitle')}
            />
-           <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-white flex items-center gap-4 animate-bounce">
-                 <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-secondary">
-                    <MapPin size={24} />
-                 </div>
-                 <div className="text-left font-display">
-                    <h4 className="font-bold text-secondary">{t('contact.mapTitle')}</h4>
-                    <p className="text-xs text-secondary/50">{t('contact.mapAction')}</p>
-                 </div>
+           <a 
+              href="https://maps.app.goo.gl/kUJKKTky8y5Yorjk9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="absolute bottom-10 right-10 bg-white/90 backdrop-blur-md px-6 py-3 rounded-2xl shadow-2xl border border-white flex items-center gap-4 hover:bg-primary hover:text-white transition-all group/link"
+           >
+              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-secondary group-hover/link:bg-white transition-colors">
+                 <MapPin size={18} />
               </div>
-           </div>
-        </a>
+              <div className="text-left font-display">
+                 <h4 className="font-bold text-sm">{t('contact.mapTitle')}</h4>
+                 <p className="text-[10px] opacity-50">{t('contact.mapAction')}</p>
+              </div>
+           </a>
+        </div>
       </div>
     </div>
   );
