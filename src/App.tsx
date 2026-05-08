@@ -13,6 +13,7 @@ import BeritaDetail from './pages/BeritaDetail';
 import Galeri from './pages/Galeri';
 import Kontak from './pages/Kontak';
 import Admin from './pages/Admin';
+import PPDB from './pages/PPDB';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -58,6 +59,7 @@ function AppContent() {
               <Route path="/galeri" element={<Galeri />} />
               <Route path="/kontak" element={<Kontak />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/ppdb-2026" element={<PPDB />} />
             </Routes>
           </motion.div>
         </AnimatePresence>
