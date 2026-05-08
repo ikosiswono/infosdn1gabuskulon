@@ -191,7 +191,7 @@ const Profil = () => {
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-32 h-32 bg-soft-bg rounded-3xl -z-10 animate-pulse"></div>
               <img 
-                src="https://images.unsplash.com/photo-1544717305-273398c8c505?q=80&w=2070&auto=format&fit=crop" 
+                src="https://github.com/ikosiswono/infosdn1gabuskulon/blob/main/assets/gambar/sekolah/bangunan%20sekolah.png?raw=true" 
                 alt="School Building" 
                 className="rounded-[3rem] shadow-2xl w-full h-[500px] object-cover"
               />
