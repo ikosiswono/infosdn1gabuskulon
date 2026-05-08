@@ -54,25 +54,35 @@ const BeritaDetail = () => {
           <p className="text-xl font-medium text-secondary leading-normal">
             Gabuskulon, {news.date} — {news.excerpt}
           </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo.
-          </p>
-          <p>
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
-            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem 
-            ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          </p>
+          <div className="text-secondary/80 space-y-6">
+            {news.content ? (
+              <p>{news.content}</p>
+            ) : (
+              <>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                  dicta sunt explicabo.
+                </p>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
+                  magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem 
+                  ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
+                  incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+              </>
+            )}
+          </div>
           <blockquote className="border-l-8 border-accent pl-8 py-4 bg-soft-bg/30 text-2xl font-display font-bold text-secondary italic rounded-r-2xl">
             "{t('profile.introDescription')}"
           </blockquote>
-          <p>
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut 
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-            esse quam nihil molestiae consequatur.
-          </p>
+          {!news.content && (
+            <p>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut 
+              aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+              esse quam nihil molestiae consequatur.
+            </p>
+          )}
         </article>
 
         {/* Share & Actions */}
