@@ -650,7 +650,7 @@ const Arsip = () => {
               <div className="w-full md:w-[40%] bg-gray-100 flex items-center justify-center relative overflow-hidden min-h-[200px] md:min-h-full">
                 {selectedItem.type === 'image' ? (
                   <img 
-                    src={selectedItem.image || "https://images.unsplash.com/photo-1544717305-273398c8c505?q=80&w=2070&auto=format&fit=crop"} 
+                    src={selectedItem.image || "https://github.com/ikosiswono/infosdn1gabuskulon/blob/main/assets/gambar/sekolah/bangunan%20sekolah.png?raw=true"} 
                     alt={selectedItem.title} 
                     className="w-full h-full object-cover"
                   />
