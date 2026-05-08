@@ -85,7 +85,7 @@ const Profil = () => {
     try {
       await addDoc(collection(db, 'staff'), {
         ...newStaff,
-        img: imageUrl || 'https://github.com/ikosiswono/infosdn1gabuskulon/blob/main/assets/gambar/sekolah/bangunan%20sekolah.png?raw=true',
+        img: imageUrl || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop',
         order: Number(newStaff.order) || staffList.length + 1
       });
       setIsModalOpen(false);
