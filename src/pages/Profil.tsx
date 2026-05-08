@@ -127,13 +127,18 @@ const Profil = () => {
         className="fixed inset-0 -z-20 pointer-events-none"
         aria-hidden="true"
       >
-        <div 
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('https://github.com/ikosiswono/infosdn1gabuskulon/blob/main/assets/gambar/halaman%201/Background%20halaman%20profile.jpg?raw=true')` }}
-        />
-        {/* Background Overlay for Readability */}
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
-      </div>
+      <div className="relative w-full h-full">
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: `url("https://raw.githubusercontent.com/ikosiswono/infosdn1gabuskulon/main/assets/gambar/halaman%201/Background%20halaman%20profile.jpg")`,
+    }}
+  />
+
+  {/* Background Overlay for Readability */}
+  <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
+</div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Header */}
