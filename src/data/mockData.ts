@@ -69,12 +69,22 @@ export const ARCHIVE_DATA = [
 
 export const NEWS_DATA = [
   {
+    id: 'ppdb-2026',
+    title: 'Panduan Lengkap Pendaftaran Siswa Baru (PPDB) 2026',
+    excerpt: 'Simak langkah-langkah pendaftaran, persyaratan berkas, dan tips penting untuk orang tua calon siswa baru tahun ajaran 2026/2027.',
+    date: '08 Mei 2024',
+    author: 'Panitia PPDB',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop',
+    link: '/ppdb-2026'
+  },
+  {
     id: '1',
     title: 'Pendaftaran Siswa Baru (PPDB) 2024 Telah Dibuka',
     excerpt: 'UPTD SDN 1 Gabuskulon mengundang calon siswa baru untuk bergabung...',
     date: '01 Mar 2024',
     author: 'Admin Sekolah',
-    image: 'https://images.unsplash.com/photo-1577891721396-227dbb86bc81?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1577891721396-227dbb86bc81?q=80&w=2070&auto=format&fit=crop',
+    content: 'Pendaftaran Peserta Didik Baru (PPDB) tahun ajaran 2024/2025 resmi dibuka. UPTD SDN 1 Gabuskulon siap menerima calon siswa yang ingin menimba ilmu dan mengembangkan potensi diri. Kami menyediakan fasilitas modern dan tenaga pendidik yang kompeten di bidangnya.'
   },
   {
     id: '2',
@@ -82,7 +92,8 @@ export const NEWS_DATA = [
     excerpt: 'Prestasi membanggakan kembali diukir oleh siswa di bidang sains tingkat provinsi...',
     date: '25 Feb 2024',
     author: 'Guru Prestasi',
-    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop',
+    content: 'Selamat kepada ananda yang telah berhasil meraih medali emas pada Olimpiade Sains tingkat Provinsi Jawa Barat. Ini merupakan bukti nyata bahwa kerja keras dan bimbingan guru yang intensif membuahkan hasil yang manis.'
   },
   {
     id: '3',
@@ -90,7 +101,8 @@ export const NEWS_DATA = [
     excerpt: 'Seluruh siswa mengikuti kegiatan outbound di alam terbuka untuk melatih kerjasama...',
     date: '12 Feb 2024',
     author: 'Kesiswaan',
-    image: 'https://images.unsplash.com/photo-1510531704581-5b2870972060?q=80&w=2020&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1510531704581-5b2870972060?q=80&w=2020&auto=format&fit=crop',
+    content: 'Kegiatan outbound tahunan yang dilaksanakan di daerah pegunungan berjalan dengan sangat meriah. Para siswa diajak untuk bekerja sama dalam tim, melatih kemandirian, dan mencintai alam sekitar melalui berbagai permainan edukatif.'
   }
 ];
 
